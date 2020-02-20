@@ -7,7 +7,6 @@
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
-|nickname|string|null: false|
 ### Association
 - has_many :posts
 - has_many :users_groups
@@ -17,8 +16,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false|
-|groupname|string|null: false|
+|name|string|null: false|
 ### Association
 - has_many :posts
 - has_many :users_groups
@@ -31,6 +29,8 @@
 |text|text||
 |image|text||
 |user_id|integer|null: false|
+|group_id|integer|null: false|
+
 ### Association
 - belongs_to :user
 - belongs_to :group
