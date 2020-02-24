@@ -1,0 +1,19 @@
+.sidebar
+  .sidebar__username
+    .sidebar__username__topitems
+      %p.sidebar__username__topitems__itemsname
+        user_name
+      %ul.sidebar__username__topitems__icons
+        %li.sidebar__username__topitems__username
+          = link_to "#" do
+            = icon('fa','edit')
+        %li.sidebar__username__topitems__group
+          = link_to "#" do
+            = icon('fa','cog')
+               
+  .sidebar__grouplist
+    .sidebar__grouplist__group
+      .sidebar__grouplist__group__name
+        techcamp
+      .sidebar__grouplist__group__message
+        まだメッセージがありません
