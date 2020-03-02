@@ -1,29 +1,29 @@
 .sidebar {
+  box-sizing: border-box;
+  color: #ffffff;
   width: 300px;
   float: left;
   &__username {
-    height: 100px;
-    width: 300px;
     background-color: #253141;
-    color: #ffffff;
+    height: 100px;
     padding: 0 20px;
     display: flex;
     align-items: center;
     &__topitems {
       display: flex;
       justify-content: space-between;
-      width: 100%;
       height: 20px;
       &__itemsname{
         width:200px;
         font-weight: bold;
-        font-size: 16px;
+        font-size: $side_header_font;
       }
       &__icons{
         display: flex;
         justify-content: flex-end;
         width:60px;
         li {
+          font-size: $side_header_font;
           a{
             color: #ffffff;
             padding-left: 5px;
@@ -33,21 +33,20 @@
     }  
   }
   &__grouplist {
-    height: calc(100vh - 100px);
     background-color: #2f3e51;
-    padding: 20px;
+    height: calc(100vh - 100px);
+    padding: 0 20px;
     &__group {
+      box-sizing: border-box;
+      padding: 20px 0 40px;
       &__name {
-        padding-bottom: 5px;
-        font-size: 15px;
+        color:#ffffff;
+        font-size: $side_group_name;
       }       
       &__message {
-        margin-bottom: 40px;
-        font-size: 11px;        
-      }
-      a{
-        color: #ffffff;
-        text-decoration: none;
+        color:#ffffff;
+        font-size: $side_group_message;
+        margin-top: 5px;    
       }
     }      
   }    
