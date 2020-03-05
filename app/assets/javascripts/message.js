@@ -40,7 +40,7 @@ $(function(){
    };
   }
 
-  $('.js-form').on('submit', function(e){
+  $('.new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action')
@@ -54,8 +54,8 @@ $(function(){
     })
      .done(function(data){
        var html = buildHTML(data);
-       $('.messages').append(html);
-       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');   
+       $('.main-chat__message-list').append(html);
+       $('.main-chat__message-list').animate({scrollTop: $('.main-chat__message-list')[0].scrollHeight}, 'fast');   
        $('form')[0].reset();
      })
       .fail(function(){
