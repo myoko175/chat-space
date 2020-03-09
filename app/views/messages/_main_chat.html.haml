@@ -4,6 +4,7 @@
       .main-chat__group-info__box__group
         = @group.name
       .main-chat__group-info__box__name
+        Member :
         - @group.users.each do |user|
           = user.name
     %div.main-chat__group-info__edit
